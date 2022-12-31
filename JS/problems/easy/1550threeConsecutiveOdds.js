@@ -54,4 +54,8 @@ const threeConsecutiveOdds = arr => {
   return false;
 };
 
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+
 console.log(threeConsecutiveOdds(arr))

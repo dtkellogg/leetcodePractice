@@ -9,20 +9,10 @@ var maxSubArray = function(nums) {
 };
 
 
-////////////////////////////////////////////////////////////////
-//practice
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
 
 var maxSubArray = function(nums) {
-  let i = 0,
-    sum = 0
-  for(let j = 0; j < nums.length; j++) {
-    if(sum + nums[j] > sum) {
-      sum += nums[j]
-    } else {
-      i++
-    }
-  }
-  return sum
 }
 
 console.log(maxSubArray(nums))

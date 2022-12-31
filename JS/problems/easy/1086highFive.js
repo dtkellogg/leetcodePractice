@@ -42,4 +42,8 @@ var highFive = function(items) {
 //     return result.sort((a, b) => a[0] - b[0]);
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(highFive(items))

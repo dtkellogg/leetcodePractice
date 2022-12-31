@@ -13,4 +13,8 @@ var sumOfUnique = function(nums) {
     return sum
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(sumOfUnique(nums))

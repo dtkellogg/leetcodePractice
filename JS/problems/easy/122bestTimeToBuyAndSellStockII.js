@@ -46,4 +46,11 @@ var maxProfit = function (prices) {
 //   // Time travel trading makes every weekend is a three-day weekend!
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var maxProfit = function (prices) {
+}
+
 console.log(maxProfit(prices))

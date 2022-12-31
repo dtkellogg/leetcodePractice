@@ -36,4 +36,8 @@ var canPlaceFlowers = function(flowerbed, n) {
 // 	return false;
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(canPlaceFlowers(flowerbed, n))

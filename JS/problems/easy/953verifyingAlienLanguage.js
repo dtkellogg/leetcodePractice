@@ -84,4 +84,8 @@ const isAlienSorted = (words, order) => {
     return true;
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(isAlienSorted(words, order))

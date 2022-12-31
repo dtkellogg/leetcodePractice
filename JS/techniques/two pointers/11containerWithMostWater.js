@@ -45,19 +45,6 @@ height = [1,8,6,2,5,4,8,3,7] // Output: 49
 // PRACTICE
 
 const maxArea = (height) => {
-  let l = 0,
-      r = height.length - 1,
-      maxArea = 0
-
-  while(l < r) {
-    let width = r - l,
-        length = Math.min(height[l], height[r]),
-        area = width * length
-    if(area > maxArea) maxArea = area
-    height[l]  < height[r] ? l++ : r--
-  }
-
-  return maxArea
 }
 
 console.log(maxArea(height))

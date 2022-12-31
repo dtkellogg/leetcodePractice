@@ -51,6 +51,10 @@ var sortArrayByParity = function(A) {
 // var sortArrayByParity = function(A) {
 //     return A.sort((a, b) => { return a % 2 - b % 2; });
 // };
+
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
     
 
 console.log(sortArrayByParity(nums))

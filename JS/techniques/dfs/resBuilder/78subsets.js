@@ -46,17 +46,6 @@ nums = [1,2,3]  // Output: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
 // Practice
 
 function subsets(nums) {
-  let res = []
-
-  const dfs = (path, i) => {
-    res.push(path)
-    for(let j = i; j < nums.length; j++) {
-      dfs([...path, nums[j]], j + 1)
-    }
-  }
-
-  dfs([], 0)
-  return res
 }
 
 console.log(subsets(nums))

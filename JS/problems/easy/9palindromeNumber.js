@@ -50,4 +50,10 @@ var isPalindrome = function(x) {
 //   return rev === x || Math.trunc(rev/10) === x; // the second part after || is if there are an odd num of terms
 // }
 
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+function isPalindrome(x) {
+}
+
 console.log(isPalindrome(x))

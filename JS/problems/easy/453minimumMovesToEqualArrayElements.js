@@ -37,4 +37,8 @@ var minMoves = function(nums) {
     return sum - nums.length * min
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(minMoves(nums))

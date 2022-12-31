@@ -13,4 +13,11 @@ var merge = function (nums1, m, nums2, n) {
     }
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var merge = function (nums1, m, nums2, n) {
+}
+
 console.log(merge(nums1, m, nums2, n))

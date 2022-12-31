@@ -55,6 +55,7 @@ s = "ABAB", k = 2  // Output: 4
 //   return right - left;
 // };
 
+
 ///////////////////////////////////////
 // practice
 

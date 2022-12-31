@@ -47,4 +47,8 @@ s = "abbbabaaa"
 //   return s2.length === s.length ? s : removeDuplicates(s2);  // function is repeated until the input === s2
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(removeDuplicates(s))

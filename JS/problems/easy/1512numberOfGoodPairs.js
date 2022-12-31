@@ -36,4 +36,8 @@ var numIdenticalPairs = function(nums) {
     return count
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(numIdenticalPairs(nums))

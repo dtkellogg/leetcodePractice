@@ -33,4 +33,8 @@ var isPerfectSquare = function(num) {
 //     return Math.sqrt(num) === Math.floor(Math.sqrt(num))
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(isPerfectSquare(num))

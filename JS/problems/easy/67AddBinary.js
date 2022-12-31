@@ -9,6 +9,13 @@ var addBinary = function(a, b) {
   return sum.toString(2)
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var addBinary = function(a, b) {
+}
+
 console.log(addBinary(a, b))
 
 // The idea is to use inputs, a and b to build two binary literals. 

@@ -3,16 +3,16 @@ x = 2.00000, n = 4  // Output: 16
 // x = 2.00000, n = -2  // 0.25
 
 var myPow = function(x, n) {
-    console.log(`x: ${x}, n: ${n}`)
+  console.log(`x: ${x}, n: ${n}`)
 
-    if (n===0) return 1;
-    let pow = Math.abs(n);
-	  let result = pow%2===0 ? myPow(x*x,pow/2) : myPow(x*x,(pow-1)/2) * x;
+  if (n===0) return 1;
+  let pow = Math.abs(n);
+  let result = pow%2===0 ? myPow(x*x,pow/2) : myPow(x*x,(pow-1)/2) * x;
 
-    console.log(`x: ${x}, n: ${n}, result: ${result}`);
-    console.log("--------------------------------")
-    
-    return n < 0 ? 1/result : result;
+  console.log(`x: ${x}, n: ${n}, result: ${result}`);
+  console.log("--------------------------------")
+  
+  return n < 0 ? 1/result : result;
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -20,7 +20,7 @@ var myPow = function(x, n) {
 
 // var myPow = function(x, n) {
 //     if (n===0) return 1;
-    
+  
 //     let pow = Math.abs(n);
     
 // 	let result = pow%2===0 ? myPow(x*x,pow/2) : myPow(x*x,(pow-1)/2) * x;

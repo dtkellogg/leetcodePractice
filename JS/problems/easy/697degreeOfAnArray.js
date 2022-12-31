@@ -27,4 +27,8 @@ const findShortestSubArray = (nums) => {
     return res
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(findShortestSubArray(nums))

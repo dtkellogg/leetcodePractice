@@ -36,4 +36,8 @@ function maxNumberOfApples(arr) {
   return count;
 }
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(maxNumberOfApples(arr))

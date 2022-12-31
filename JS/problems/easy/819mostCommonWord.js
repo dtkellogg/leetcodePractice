@@ -48,4 +48,9 @@ const mostCommonWord = (paragraph, banned) => {
   return answer.word;
 };
 
+
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(mostCommonWord(paragraph, banned))

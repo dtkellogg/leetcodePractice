@@ -38,4 +38,7 @@ var wordPattern = function(pattern, str) {
 //   return true;
 // };
 
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(wordPattern(pattern, s))

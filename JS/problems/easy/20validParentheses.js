@@ -89,5 +89,12 @@ var isValid = function(s) {
 };
 
 
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var isValid = function(s) {
+}
+
+
 
 console.log(isValid(s))

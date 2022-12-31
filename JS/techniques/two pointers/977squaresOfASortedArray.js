@@ -58,22 +58,6 @@ nums = [-4,-1,0,3,10]
 // PRACTICE
 
 var sortedSquares = function(nums) {
-  let l = 0,
-      r = nums.length - 1;
-
-  while(l < r) {
-    if(nums[l] ** 2 > nums[r] ** 2) {
-      [nums[l], nums[r]] = [nums[r], nums[l]];
-      nums[r] *= nums[r]
-      r--
-    } else {
-      nums[r] *= nums[r]
-      r--
-    }
-    console.log(nums)
-  }
-
-  return nums
 }
 
 

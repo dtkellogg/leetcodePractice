@@ -29,4 +29,8 @@ var subdomainVisits = function(cpdomains) {
     return Object.entries(visitCounts).map(([key, value]) => `${value} ${key}`);
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(subdomainVisits(cpdomains))

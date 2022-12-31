@@ -42,4 +42,8 @@ var pivotIndex = function(nums) {
 // I enjoyed the process of reducing runtiime. So I modified my code several times.
 // The key to reduce runtime lies in less operations in the loop.
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(pivotIndex(nums))

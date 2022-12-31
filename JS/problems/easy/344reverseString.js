@@ -31,4 +31,7 @@ var reverseString = function(s) {
 //     return s.reverse()
 // };
 
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(reverseString(s))

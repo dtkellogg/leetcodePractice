@@ -8,4 +8,8 @@ var isRectangleOverlap = function(rec1, rec2) {
     )
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(isRectangleOverlap(rec1, rec2))

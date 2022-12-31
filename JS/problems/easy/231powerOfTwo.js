@@ -7,4 +7,7 @@ var isPowerOfTwo = function(n) {
     return power === Math.floor(power)
 };
 
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(isPowerOfTwo(n))

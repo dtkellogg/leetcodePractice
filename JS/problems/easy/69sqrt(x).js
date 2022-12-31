@@ -24,4 +24,11 @@ var mySqrt = function(x) {
 //   return low;
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var mySqrt = function(x) {
+};
+
 console.log(mySqrt(x))

@@ -43,4 +43,11 @@ var isIsomorphic = function(s, t) {
     return true;
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var isIsomorphic = function(s, t) {
+}
+
 console.log(isIsomorphic(s,t))

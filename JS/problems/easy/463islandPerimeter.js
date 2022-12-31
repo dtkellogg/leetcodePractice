@@ -23,4 +23,8 @@ var islandPerimeter = function(grid) {
     return perimeter;
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(islandPerimeter(grid))

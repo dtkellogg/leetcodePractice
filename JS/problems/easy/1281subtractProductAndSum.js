@@ -24,4 +24,8 @@ const subtractProductAndSum = n => {
 //     return product - sum
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(subtractProductAndSum(n))

@@ -56,3 +56,7 @@ MaxStack.prototype.popMax = function() {
  * var param_4 = obj.peekMax()
  * var param_5 = obj.popMax()
  */
+
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE

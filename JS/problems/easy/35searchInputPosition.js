@@ -47,6 +47,10 @@ function binarySearch(array, target, start, end) {
 //     return nums.length
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 var searchInsert = function(nums, target) {
 }
 

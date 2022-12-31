@@ -43,4 +43,10 @@ var reverseWords = function(s) {
 //     }).join(" ")
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+
+
 console.log(reverseWords(s))

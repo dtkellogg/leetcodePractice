@@ -21,4 +21,8 @@ var rotateString = function(s, goal) {
 //     return false
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(rotateString(s, goal))

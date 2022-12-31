@@ -19,4 +19,8 @@ var toLowerCase = function(str) {
     return newStr;
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(toLowerCase(s))

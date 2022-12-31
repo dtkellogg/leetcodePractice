@@ -54,4 +54,8 @@ const getNoZeroIntegers = n => {
 //   return [x, y];
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(getNoZeroIntegers(n))

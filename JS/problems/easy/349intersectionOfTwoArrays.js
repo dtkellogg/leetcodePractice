@@ -14,4 +14,7 @@ var intersection = function(nums1, nums2) {
     return [...new Set(nums1.filter(value => nums2.includes(value)))]
 };
 
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(intersection(nums1, nums2));

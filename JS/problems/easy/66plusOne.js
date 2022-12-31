@@ -28,4 +28,11 @@ var plusOne = function(digits) {
   return [1, ...digits];
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var plusOne = function(digits) {
+}
+
 console.log(plusOne(digits))

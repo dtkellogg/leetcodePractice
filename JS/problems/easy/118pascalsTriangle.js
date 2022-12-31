@@ -13,4 +13,11 @@ var generate = function(numRows) {
     return pascal;
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var generate = function(numRows) {
+}
+
 console.log(generate(numRows))

@@ -12,4 +12,10 @@ var canConstruct = function(ransomNote, magazine) {
     return oldMagazineLength === magazine.length + ransomNote.length;
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+
+
 console.log(canConstruct(ransomNote, magazine))

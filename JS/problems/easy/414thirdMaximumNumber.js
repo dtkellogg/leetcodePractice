@@ -18,4 +18,8 @@ function thirdMax(nums) {
     return third === -Infinity ? first : third;
 }
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(thirdMax(nums))

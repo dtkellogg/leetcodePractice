@@ -27,4 +27,8 @@ var defangIPaddr = function(address) {
 //     return result;    
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(degangIPaddr(address))

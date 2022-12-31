@@ -26,4 +26,10 @@ var isPalindrome = function(s) {
 //     return (condensed === "") ? "true" : condensed === condensed.split("").reverse().join("")
 // };
 
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var isPalindrome = function(s) {
+}
+
 console.log(isPalindrome)

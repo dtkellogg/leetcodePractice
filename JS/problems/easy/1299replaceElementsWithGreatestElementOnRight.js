@@ -26,4 +26,8 @@ const replaceElements = arr => {
     return result;
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(replaceElements(arr))

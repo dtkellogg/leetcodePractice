@@ -26,4 +26,8 @@ var restoreString = (s, indices) => {
     return map.join("")
 }
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(restoreString(s, indices));

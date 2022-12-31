@@ -61,6 +61,10 @@ var singleNumber = function(nums) {
 };
 
 
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var singleNumber = function(nums) {
+}
 
 console.log(singleNumber(nums))
-

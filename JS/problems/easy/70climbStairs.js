@@ -21,4 +21,11 @@ var climbStairs = function(n) {
 //     return cur;
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var climbStairs = function(n) {
+}
+
 console.log(climbStairs(n))

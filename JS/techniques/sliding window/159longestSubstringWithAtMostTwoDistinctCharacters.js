@@ -24,24 +24,31 @@ s = "eceba"  // Output: 3
 //   return max;
 // };
 
+// Same thing as above, but w/o comments
+// let lengthOfLongestSubstringTwoDistinct = s => {
+//   let k = 2;
+//   let map = new Map();
+//   let max = 0;
+
+//   for (let l = 0, r = 0; r <= s.length - 1; r++) {
+//     map.set(s.charAt(r), (map.get(s.charAt(r)) || 0) + 1);
+//     while (map.size > k) {
+//       let letter = s.charAt(l);
+//       map.set(letter, map.get(letter) - 1);
+//       if (map.get(letter) === 0) map.delete(letter);
+//       l++;
+//     }
+//     max = Math.max(max, r - l + 1);
+//   }
+
+//   return max;
+// };
+
+
 
 ////////////////////////////////////////////////////////////////
 // PRACTICE
 let lengthOfLongestSubstringTwoDistinct = s => {
-  let l = 0, r = 0, maxLen = 0, seen = new Map();
-
-  while(r < s.length) {
-    while(seen.has(s[r])) {
-      seen.set(s[r], seen.get(s[r]) - 1);
-      if(seen.get(s[r]) === 0) seen.delete(s[r]);
-      l++
-    }
-    seen.set(s[r], 1)
-    maxLen = Math.max(maxLen, r - l + 1);
-    r++
-  }
-
-  return maxLen
 }
 
 console.log(lengthOfLongestSubstringTwoDistinct(s))

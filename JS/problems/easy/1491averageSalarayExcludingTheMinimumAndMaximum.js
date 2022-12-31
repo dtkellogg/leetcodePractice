@@ -22,4 +22,8 @@ var average = function(salary) {
 //     return desired.reduce((a,c) => a + c, 0 ) / desired.length
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(average(salary))

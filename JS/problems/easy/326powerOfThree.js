@@ -35,4 +35,8 @@ var isPowerOfThree = function(n) {
 //     return power === Math.floor(power)
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(isPowerOfThree(n))

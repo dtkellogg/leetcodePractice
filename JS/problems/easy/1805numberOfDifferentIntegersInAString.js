@@ -24,4 +24,8 @@ var numDifferentIntegers = function(word) {
 //     }
 // }
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(numDifferentIntegers(word))

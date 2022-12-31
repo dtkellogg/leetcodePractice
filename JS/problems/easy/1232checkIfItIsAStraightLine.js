@@ -30,4 +30,8 @@ var checkStraightLine = function(coordinates) {
     return true;
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(checkStraightLine(coordinates))

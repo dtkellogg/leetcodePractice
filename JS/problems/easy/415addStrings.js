@@ -30,4 +30,8 @@ var addStrings = function(num1, num2) {
     return sum;
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(addStrings(num1, num2));

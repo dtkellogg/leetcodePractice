@@ -8,4 +8,8 @@ const map = {
 
 const countMatches = (items, key, value) => items.filter(i => i[map[key]] == value).length
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(countMatches(items, ruleKey, ruleValue))

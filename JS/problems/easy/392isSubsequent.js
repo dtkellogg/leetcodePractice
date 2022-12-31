@@ -19,4 +19,8 @@ var isSubsequence = function(s, t) {
     return i === s.length
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(isSubsequence(s, t))

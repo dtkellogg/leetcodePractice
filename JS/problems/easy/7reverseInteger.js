@@ -41,4 +41,10 @@ var reverse = function(x) {
 //   return absReversed * Math.sign(x);
 // };
 
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var reverse = function(x) {
+};
+
 console.log(reverse(x))

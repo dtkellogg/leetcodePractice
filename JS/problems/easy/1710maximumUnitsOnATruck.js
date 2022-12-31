@@ -63,4 +63,8 @@ const maximumUnits = (boxTypes, truckSize) => {
 //     return massToCarry
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(maximumUnits(boxTypes, truckSize))

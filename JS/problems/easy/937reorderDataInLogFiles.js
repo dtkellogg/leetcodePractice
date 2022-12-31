@@ -53,4 +53,8 @@ const reorderLogFiles = (logs) => {
   return [...letterLogs.sort(compare), ...digitLogs];
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(reorderLogFiles(logs))

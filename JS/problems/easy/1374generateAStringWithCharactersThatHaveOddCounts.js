@@ -11,4 +11,8 @@ var generateTheString = function(n) {
 //     return "p".repeat(n);
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(generateTheString(n))

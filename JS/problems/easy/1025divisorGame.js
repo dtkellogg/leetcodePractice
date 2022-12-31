@@ -32,4 +32,8 @@ var divisorGame = function(N) {
     return winArray[N];
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(divisorGame(n))

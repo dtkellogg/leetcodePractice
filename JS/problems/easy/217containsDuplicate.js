@@ -17,4 +17,8 @@ var containsDuplicate = function(nums) {
 //     return (new Map([nums])).size !== nums.length
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(containsDuplicate(nums))

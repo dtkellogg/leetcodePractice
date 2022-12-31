@@ -20,6 +20,13 @@ var maxProfit = function(prices) {
 //     return max;
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var maxProfit = function(prices) {
+}
+
 console.log(maxProfit(prices))
 
 // why use MAX_SAFE_INTEGER:

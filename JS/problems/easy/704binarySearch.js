@@ -14,4 +14,8 @@ var search = function(nums, target) {
     return nums[left] == target ? left : -1
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(search(nums, target))

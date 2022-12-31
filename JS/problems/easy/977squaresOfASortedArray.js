@@ -51,4 +51,8 @@ var sortedSquares = function(A) {
 //     return result;
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(sortedSquares(nums))

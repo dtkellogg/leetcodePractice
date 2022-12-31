@@ -10,6 +10,14 @@ var removeElement = function(nums, val) {
         }
       }
       console.log(count)
+      return nums
 };
+
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var removeElement = function(nums, val) {
+}
 
 console.log(removeElement(nums, val))

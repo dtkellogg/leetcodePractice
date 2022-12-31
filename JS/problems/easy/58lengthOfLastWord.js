@@ -10,4 +10,12 @@ var lengthOfLastWord = function(s) {
     return s.trim().split(" ").pop().length;
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var lengthOfLastWord = function(s) {
+};
+
+
 console.log(lengthOfLastWord(s))

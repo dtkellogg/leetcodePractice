@@ -20,4 +20,8 @@ var nextGreaterElement = function(nums1, nums2) {
     return output
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(nextGreaterElement(nums1, nums2))

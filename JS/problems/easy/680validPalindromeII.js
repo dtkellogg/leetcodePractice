@@ -42,4 +42,9 @@ const cut = (s, i) => s.substr(0, i) + s.substr(i + 1);
 
 const isPalindrome = (s) => s === s.split('').reverse().join('');
 
+
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(validPalindrome(s))

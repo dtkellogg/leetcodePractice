@@ -34,4 +34,11 @@ function longestCommonPrefix(strs) {
   return strs[0]
 }
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+function longestCommonPrefix(strs) {
+}
+
 console.log(longestCommonPrefix(strs))

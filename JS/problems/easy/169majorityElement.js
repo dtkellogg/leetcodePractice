@@ -52,4 +52,11 @@ var majorityElement = function(nums) {
     
 // };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var majorityElement = function(nums) {
+}
+
 console.log(majorityElement(nums))

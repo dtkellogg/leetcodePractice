@@ -48,4 +48,9 @@ var missingNumber = function (nums) {
 
   return sum;
 };
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+
 console.log(missingNumber(nums))

@@ -1,4 +1,12 @@
-n = 3  // Output: ["((()))","(()())","(())()","()(())","()()()"]
+n = 3  
+// Output: 
+// [
+// "((()))",
+// "(()())",
+// "(())()",
+// "()(())",
+// "()()()"
+// ]
 
 
 // backtracking + DFS
@@ -81,20 +89,17 @@ n = 3  // Output: ["((()))","(()())","(())()","()(())","()()()"]
 function generateParenthesis(n) {
   let res = [];
 
-  const dfs = (l,r,s) => {
-    if(l > r) return
-    if(r === 0 && l === 0) {
-      res.push(s)
-      return
-    }
-    console.log(`l: ${l}, r: ${r}, s: ${s}`);
+  let dfs = (l, r, s) => {
+    if(l > r) return;
 
+    if(l === 0 && r === 0) res.push(s);
 
-    if(l > 0) dfs(l-1,r,s + '(')
-    if(r > 0) dfs(l,r-1,s + ')')
-  };
+    if(l > 0) dfs(l - 1, r, s + '(')
+    if(r > 0) dfs(l, r - 1, s + ')')
+  }
 
-  dfs(n,n,'')
+  dfs(n, n, '')
+
   return res
 }
 

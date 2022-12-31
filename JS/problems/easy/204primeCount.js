@@ -40,4 +40,11 @@ var countPrimes = function(n) {
     return result;
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
+var countPrimes = function(n) {
+}
+
 console.log(countPrimes(n))

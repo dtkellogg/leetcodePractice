@@ -16,9 +16,7 @@ nums = [0,1]  // Output: [1,0]
 //         continue;
 //       }
 //       if(A[i] % 2 === 1 && A[j] % 2 === 0){
-//         const temp = A[i];
-//         A[i] = A[j];
-//         A[j] = temp;
+//         [A[i], A[j]] = [A[j], A[i]]
 //         i++;
 //         j--;
 //       }
@@ -60,24 +58,6 @@ nums = [0,1]  // Output: [1,0]
 // PRACTICE
 
 var sortArrayByParity = function(nums) {
-  let l = 0,
-      r = nums.length - 1;
-
-  while(l < r) {
-    if(nums[l] % 2 === 0) {
-      l++
-      continue
-    }
-    if(nums[l] % 2 === 1 && nums[r] % 2 === 0) {
-      [nums[l], nums[r]] = [nums[r], nums[l]]
-      l++
-      r--
-    } else {
-      l++
-    }
-  }
-
-  return nums
 }    
 
 console.log(sortArrayByParity(nums))

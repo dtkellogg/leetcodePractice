@@ -67,4 +67,8 @@ console.log(nums.reduce((acc, _, i, arr) => arr[i] += acc ))
     return nums
 };
 
+
+////////////////////////////////////////////////////////////////////////////////
+// PRACTICE
+
 console.log(runningSum(nums))
