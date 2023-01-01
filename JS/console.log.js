@@ -31,3 +31,6 @@ console.assert(person.pets.find((p) => p === 'Bob'), 'Person does not have a pet
 
 // #8 - Add CSS
 console.log('%c I am a logging master', 'font-weight: bold; background: red; padding: 15px')
+
+// #10 -
+console.warn("This is a warning!")
