@@ -39,6 +39,12 @@ function longestCommonPrefix(strs) {
 // PRACTICE
 
 function longestCommonPrefix(strs) {
+  for(let i = 0; i < strs[0].length; i++) {
+    if(strs.some((s) => s[i] !== strs[0][i])) {
+      return strs[0].substr(0, i)
+    }
+  }
+  return strs[0]
 }
 
 console.log(longestCommonPrefix(strs))

@@ -45,6 +45,8 @@ var reverse = function(x) {
 // PRACTICE
 
 var reverse = function(x) {
+  let numString = x.toString()
+  return numString.split('').reverse().join('')
 };
 
 console.log(reverse(x))
