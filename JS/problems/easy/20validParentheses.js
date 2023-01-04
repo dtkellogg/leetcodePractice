@@ -1,4 +1,4 @@
-s = "{[()]}"
+s = "{[()]}"  // true
 
 var isValid = function(s) {   
     const stack = [];
@@ -70,29 +70,44 @@ var isValid = function(s) {
 // };
 
 
-var isValid = function(s) {
-    let key = {
-        ")": "(",
-        "]": "[",
-        "}": "{"
-    },
-    stack = []
+// var isValid = function(s) {
+//   let key = {
+//     '(': ')',
+//     '[': ']',
+//     '{': '}'
+//   },
+//   stack = []
 
-    for(let i = 0 ; i < s.length ; i++) {
-      if(key[s[i]]) stack.push(key[s[i]])
-      else if (stack.pop() !== s[i]) {
-        return false
-      }
-    }
+//   for(let i = 0; i < s.length; i++) {
+//     if(key[s[i]]) stack.push(key[s[i]])
+//     else if (stack.pop() !== s[i]) {
+//       return false
+//     }
+//   }
 
-    return true
-};
+//   return true
+// };
 
 
 ////////////////////////////////////////////////////////////////////////////////
 // PRACTICE
+// s = "{[()]}"  // true
 
 var isValid = function(s) {
+  const key = {
+    '(': ')',
+    '[': ']',
+    '{': '}'
+  },
+  stack = []
+
+  for(let i = 0; i < s.length; i++) {
+    if(key[s[i]]) stack.push(key[s[i]])
+    else if(stack[stack.length - 1] !== s[i]) {
+      return false
+    }
+  }
+  return true
 }
 
 
