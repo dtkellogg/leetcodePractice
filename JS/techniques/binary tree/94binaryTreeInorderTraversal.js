@@ -7,6 +7,8 @@
  * }
 **/
 
+root = [1,null,2,3]  // Output: [1,3,2]
+
 function inorderTraversal(root) {
   const stack = [];
   const res = [];
