@@ -167,42 +167,94 @@
 // PRACTICE
 
 class ListNode {
+  constructor(data) {
+    this.data = data;
+    this.next = null
+  }
 }
 
 class LinkedList {
+  constructor(head = null) {
+    this.head = head
+  }
 }
 
 LinkedList.prototype.size = function() {
+  let count = 0, node = this.head
+  while(node) {
+    count++
+    node = node.next
+  }
+  return count
 }
 
 LinkedList.prototype.clear = function() {
+  this.head = null
 }
 
 LinkedList.prototype.getFirst = function () {
+  return this.head
 }
 
 LinkedList.prototype.getLast = function () {
+  let lastNode = this.head
+  while(lastNode.next) {
+    lastNode = lastNode.next
+  }
+  return lastNode
 }
 
 LinkedList.prototype.insertAtBeginning = (data) => {
+  let newNode = new ListNode(data)
+  newNode.next = this.head
+  this.head = newNode
+  return this.head
 }
 
 LinkedList.prototype.insertAtEnd = function(data) {
+  let newNode = new ListNode(data), lastNode = this.head
+  while(lastNode.next) {
+    lastNode = lastNode.next
+  }
+  lastNode.next = newNode
+  return this.head
 }
 
 LinkedList.prototype.getAt = function(index) {
+  let node = this.head, count = 0
+  while(count < index) {
+    count++
+    node = node.next
+  }
+  return node
 }
 
 LinkedList.prototype.insertAt = function(data, index) {
+  let prevNode = this.getAt(index - 1), newNode = new ListNode(data)
+  newNode.next = prevNode.next
+  prevNode.next = newNode
+  return this.head
 }
 
 LinkedList.prototype.deleteFirstNode = function() {
+  this.head = this.head.next
+  return this.head
 }
 
 LinkedList.prototype.deleteLastNode = function() {
+  let secondLastNode = this.head, lastNode = this.head.next
+  while(secondLastNode.next) {
+    secondLastNode = lastNode
+    lastNode = lastNode.next
+  }
+  secondLastNode.next = null
+  return this.head
 }
 
 LinkedList.prototype.deleteAt = function(index) {
+  let node = this.getAt(index - 1)
+  node.next = node.next.next
+  return this.head
 }
 
 

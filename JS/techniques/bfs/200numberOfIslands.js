@@ -99,19 +99,14 @@ function bfs(grid, r, c ) {
     let size = queue.length;
     for (let i = 0; i < size; i++) {
       let [row, col] = queue.shift();
-      
       for (let [x, y] of DIRECTIONS) {
         let iRow = row + x;
         let iCol = col + y;
-        
         if (iRow < 0 || iRow >= grid.length || iCol < 0 || iCol >= grid[0].length || grid[iRow][iCol] !== LAND) {
           continue;
         }
-        
         grid[iRow][iCol] = WATER;
         queue.push([iRow, iCol]);
-
-        console.log(grid)
       }
     }
   }
