@@ -8,4 +8,22 @@ var reverseList = function(head) {
     return prev
 }
 
+////////////////////////////////////////////////////////////////
+// same as above, but w/o list destructuring....
+// var reverseList = function(head) {
+
+//     let cur = head;
+//     let prev = null;
+//     let next = null;
+        
+//     while (cur) {
+//         next = cur.next;
+//         cur.next = prev;
+//         prev = cur;
+//         cur = next;
+//     }
+        
+//     return prev;
+// }
+
 console.log(reverseList(head))
