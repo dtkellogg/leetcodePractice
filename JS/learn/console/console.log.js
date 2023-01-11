@@ -16,12 +16,15 @@ console.log(console)
 
 // #5 - Start a timer - //
 console.time()
+
 // #6 - Log time since timer started - //
 console.timeLog()
 console.timeLog()
+
 // #7 - End timer and log total time - //
 console.timeEnd()
 
+// All three time consoles put together
 console.time()
 console.timeLog()
 console.timeEnd()
