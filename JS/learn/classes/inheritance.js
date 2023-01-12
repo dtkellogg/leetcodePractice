@@ -62,5 +62,4 @@ let myCar = new Car3("Ford");
 // ----- Hoisting ----- //
 
 // Unlike functions, and other JavaScript declarations, class declarations are not hoisted.
-
-// That means that you must declare a class before you can use it:
+// That means that you must declare a class before you can use it.
