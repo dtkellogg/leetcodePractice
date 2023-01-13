@@ -1,4 +1,4 @@
-arr = [0, 1, 2, 3, 4]
+arr = [0, 1, 2, 3, 4]  // 10
 
 const reduce = arr => {
   return arr.reduce((accumulator, currentValue, currentIndex, array) => {
@@ -6,7 +6,7 @@ const reduce = arr => {
     console.log("---------------")
 
     return accumulator + currentValue
-  }, 10)
+  }, 0)
 }
 
 console.log(reduce(arr))
