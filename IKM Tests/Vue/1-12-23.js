@@ -23,7 +23,7 @@ console.log(calc)
 
 // ---------- # 17 ---------- //
 console.log('\n\n// ---------- #17 ---------- //')
-var func1 = () => return {prop1: '1' + '1'}
+var func1 = () => {prop1: '1' + '1'}
 var obj1 = func1()
 console.log(obj1)
 
