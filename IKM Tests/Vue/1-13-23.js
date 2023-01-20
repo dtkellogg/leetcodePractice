@@ -44,6 +44,8 @@ var calc1 = (x,y) => {
   return (x * y) + calc2(x)
 }
 
+
+// Possible answers:
 console.log(calc1(2,3))  // 26
 console.log(calc1.call(this,2,3))  // 26
 console.log(calc1.call(2,3))  // NaN
