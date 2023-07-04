@@ -1,5 +1,5 @@
 s = "aba"  // Output: true
-// s = "abc"  // Output: false
+s = "abcc"  // Output: false
 
 // 2 pointers:
 // var validPalindrome = function(s, corrections = 1) {
@@ -47,6 +47,24 @@ s = "aba"  // Output: true
 // PRACTICE
 
 const validPalindrome = (s, attempts = 1) => {
+  let l = 0, r = s.length - 1;
+
+  while(l < r) {
+    if(s[l] === s[r]) {
+      l++;
+      r--;
+      continue;
+    }
+
+    if(attempts === 0) {
+      return false;
+    }
+
+    return validPalindrome(s.slice(l, r), 0)
+      || validPalindrome(s.slice(l+1, r+1), 0);
+  }
+
+  return true
 }
 
 console.log(validPalindrome(s))

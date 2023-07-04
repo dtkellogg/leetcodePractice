@@ -12,24 +12,24 @@ nums = [-4,-1,0,3,10]
 // Space complexity: O(n)
 
 // var sortedSquares = function(A) {
-//     let result = [];
-//     let l = 0;
-//     let r = A.length - 1;
-//     let p = r;
+//   let result = [];
+//   let l = 0;
+//   let r = A.length - 1;
+//   let p = r;
 
-//     while (l <= r) {
-//         if (A[l] ** 2 > A[r] ** 2) {
-//             result[p] = A[l] ** 2;
-//             p--
-//             l++
-//         } else {
-//             result[p] = A[r] ** 2;
-//             p--
-//             r--
-//         }
+//   while (l <= r) {
+//     if (A[l] ** 2 > A[r] ** 2) {
+//       result[p] = A[l] ** 2;
+//       p--
+//       l++
+//     } else {
+//       result[p] = A[r] ** 2;
+//       p--
+//       r--
 //     }
-    
-//     return result;
+//   }
+  
+//   return result;
 // };
 
 
@@ -58,6 +58,22 @@ nums = [-4,-1,0,3,10]
 // PRACTICE
 
 var sortedSquares = function(nums) {
+  let res = [],
+    l = 0, r = nums.length - 1, p = nums.length - 1;
+
+  while(l <= r) {
+    if(nums[l] ** 2 > nums[r] ** 2) {
+      res[p] = nums[l] ** 2
+      p--;
+      l++;
+    } else {
+      res[p] = nums[r] ** 2
+      p--;
+      r--
+    }
+  }
+
+  return res
 }
 
 
