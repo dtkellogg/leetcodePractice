@@ -17,7 +17,7 @@ s = "aba"  // Output: true
 //       return false;
 //     }
     
-//     // below checks if taking off the first of last letter would make it a palindrome
+//     // below checks if taking off the first or last letter would make it a palindrome
 //     return validPalindrome(s.slice(lo, hi), 0) 
 //         || validPalindrome(s.slice(lo + 1, hi + 1), 0);
 //   }
