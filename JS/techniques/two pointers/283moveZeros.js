@@ -53,7 +53,7 @@ nums = [1]  // Output: 1
 // PRACTICE
 
 function moveZeroes(nums) {
-  for(let l = 0, r = 0; r < nums.length; r++) {
+  for(let r = 0, l = 0; r < nums.length; r++) {
     if(nums[r] !== 0) {
       [nums[l], nums[r]] = [nums[r], nums[l]]
       l++
