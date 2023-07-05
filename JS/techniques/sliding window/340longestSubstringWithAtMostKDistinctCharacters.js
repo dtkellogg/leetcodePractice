@@ -48,28 +48,23 @@ s = "abaccc", k = 2  // Output: 4
 // };
 
 
-
-
-
-
 ////////////////////////////////////////////////////////////////////////////////
 // PRACTICE
 
 var lengthOfLongestSubstringKDistinct = function(s, k) {
-  let seen = new Map(), maxLen = 0
+  let charMap = new Map(), maxLen = 0;
 
-  for(let l = 0, r = 0; r < s.length; r++) {
-    seen.set(s[r], (seen.get(s[r]) || 0) + 1)
-
-    while(seen.size > k) {
-      seen.set(s[l], seen.get(s[l]) - 1)
-      if(seen.get(s[l]) === 0) seen.delete(s[l])
+  for(let r = 0, l = 0; r <= s.length - 1; r++) {
+    charMap.set(s[r], (charMap.get(s[r]) || 0) + 1)
+    while (charMap.size > k) {
+      let char = s[l]
+      charMap.set(char, charMap.get(char) - 1)
+      if (charMap.get(char) === 0) charMap.delete(char)
       l++
     }
-
     maxLen = Math.max(maxLen, r - l + 1)
   }
-
+  console.log(charMap)
   return maxLen
 }
 

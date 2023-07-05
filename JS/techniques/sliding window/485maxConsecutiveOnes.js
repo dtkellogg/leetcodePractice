@@ -1,4 +1,4 @@
-nums = [1,1,0,1,1,1] // Output: 
+nums = [1,1,0,1,1,1] // Output: 3
 // nums = [1,0,1,1,0,1]  // Output: 2
 
 // var findMaxConsecutiveOnes = function(nums) {
@@ -32,6 +32,13 @@ nums = [1,1,0,1,1,1] // Output:
 // nums = [1,1,0,1,1,1] // Output: 
 
 var findMaxConsecutiveOnes = function(nums) {
+  let maxLen = 0
+
+  for (let l = 0, r = 0; r < nums.length; r++) {
+    if(nums[r] === 0) l = r + 1
+    maxLen = Math.max(maxLen, r - l + 1)
+  }
+  return maxLen
 }
 
 console.log(findMaxConsecutiveOnes(nums))

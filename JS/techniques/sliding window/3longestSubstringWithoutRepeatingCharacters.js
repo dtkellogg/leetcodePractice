@@ -1,5 +1,5 @@
 s = "abcabcbb" // Output: 3
-// s = "pwwkew" // Output: 3
+s = "pwwkew" // Output: 3
 
 // function lengthOfLongestSubstring(s) {
 //   let seen = new Set();
@@ -51,6 +51,7 @@ function lengthOfLongestSubstring(s) {
       seen.delete(s[l]);
       l++
     }
+    seen.add(s[r])
     maxLen = Math.max(maxLen, r - l + 1)
   }
   return maxLen;
