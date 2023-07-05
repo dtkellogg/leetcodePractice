@@ -45,19 +45,15 @@ s = "abcabcbb" // Output: 3
 ////////////////////////////////////////////////////////////////
 // PRACTICE
 function lengthOfLongestSubstring(s) {
-  let l = 0, r = 0, seen = new Set(), maxLen = 0;
-
-  while(r < s.length) {
+  let seen = new Set(), l = 0, maxLen = 0;
+  for(let r = 0; r < s.length; r++) {
     while(seen.has(s[r])) {
-      seen.delete(s[l])
+      seen.delete(s[l]);
       l++
     }
-    seen.add(s[r]);
     maxLen = Math.max(maxLen, r - l + 1)
-    r++
   }
-
-  return maxLen
+  return maxLen;
 }
 
 console.log(lengthOfLongestSubstring(s))
