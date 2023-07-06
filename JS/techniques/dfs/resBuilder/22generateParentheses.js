@@ -1,4 +1,4 @@
-n = 3  
+n = 4
 // Output: 
 // [
 // "((()))",
@@ -8,8 +8,9 @@ n = 3
 // "()()()"
 // ]
 
+////////////////////////////////////////////////////////////////
+// Backtracking + DFS
 
-// backtracking + DFS
 // function generateParenthesis(n) {
 //   const res = [];
 
@@ -89,17 +90,16 @@ n = 3
 function generateParenthesis(n) {
   let res = [];
 
-  let dfs = (l, r, s) => {
-    if(l > r) return;
+  function go (l, r, s) {
+    if(l > r) return
 
-    if(l === 0 && r === 0) res.push(s);
+    if( l === 0 && r === 0) res.push(s)
 
-    if(l > 0) dfs(l - 1, r, s + '(')
-    if(r > 0) dfs(l, r - 1, s + ')')
+    if(l > 0) go(l - 1, r, s + '(')
+    if(r > 0) go(l, r - 1, s + ')')
   }
 
-  dfs(n, n, '')
-
+  go(n,n,'');
   return res
 }
 
