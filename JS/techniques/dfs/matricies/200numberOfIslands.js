@@ -95,26 +95,25 @@ grid = [
 const numIslands = (grid) => {
   let res = 0, H = grid.length, W = grid[0].length
 
-  const dfs = (r, c) => {
-    if(r < 0 || c < 0 || r === H || c === W) return
-    if(grid[r][c] === '0') return
-
-    grid[r][c] = '0'
-    dfs(r + 1, c)
-    dfs(r - 1, c)
-    dfs(r, c + 1)
-    dfs(r, c - 1)
-  }
-
-  for(let r = 0; r < H; r++) {
-    for(let c = 0; c < W; c++) {
-      if(grid[r][c] === '0') continue
-      res++
-      dfs(r, c)
+  for(let i = 0; i < H; i++) {
+    for(let j = 0; j < W; j++) {
+      if(grid[i][j] === '0') continue;
+      res++;
+      dfs(i,j)
     }
   }
 
-  return res
+  return res;
+
+  function dfs (x,y) {
+    if(x < 0 || y < 0 || x === H || y === W) return
+    if(grid[x][y] === '0') return
+    grid[x][y] = '0'
+    dfs(x - 1,y)
+    dfs(x + 1,y)
+    dfs(x,y - 1)
+    dfs(x,y + 1)
+  }
 }
 
 
