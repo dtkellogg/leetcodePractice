@@ -1,6 +1,6 @@
 nums = [-1,0,3,5,9,12], target = 9  // Output: 4
 // nums = [-1,0,3,5,9,12], target = 2  // Output: -1
-nums = [5], target = 5  // Output: 0
+// nums = [5], target = 5  // Output: 0
 
 // var search = function(nums, target) {
 //     let left = 0,
