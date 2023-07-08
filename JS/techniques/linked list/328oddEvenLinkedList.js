@@ -1,5 +1,3 @@
-
-
 function oddEvenList(head) {
   if (!head) return head;
 
@@ -14,7 +12,6 @@ function oddEvenList(head) {
   odd.next = even;
   return head;
 }
-
 
 
 console.log(oddEvenList(head))
