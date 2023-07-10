@@ -1,7 +1,8 @@
 var removeElements = function(head, val) {
   if (!head) return head;
 
-// if head is the value were deleting and if there is any repetition lets handle that case first otherwise we'll just break out of the loop
+// if head is the value were deleting and if there is any repetition lets handle 
+// that case first otherwise we'll just break out of the loop
   while (head && head.val === val) {
     head = head.next
   }

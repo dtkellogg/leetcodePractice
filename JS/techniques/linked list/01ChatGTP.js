@@ -25,7 +25,7 @@ function reverseLinkedList(head) {
   }
 
   return prev;
-}
+} 
 
 // Test the function
 // Create the linked list: 1 -> 2 -> 3 -> 4 -> 5
