@@ -4,33 +4,24 @@ s = ["h","e","l","l","o"]
 ////////////////////////////////////////////////////////////////
 // recusion:
 var reverseString = function(s) {
-    console.log(`s: ${s}`)
+  console.log(`s: ${s}`)
 
+  if (s.length == 0) return;
+  var temp = s[0];
+  s.shift();
 
-    if (s.length == 0) return;
-    var temp = s[0];
-    s.shift();
+  console.log(`temp: ${temp}`)
 
-    console.log(`temp: ${temp}`)
+  reverseString(s);
 
-    reverseString(s);
+  console.log(`temp: ${temp}`)
+  console.log(`s: ${s}`)
+  s.push(temp);
+  console.log(`s: ${s}`)
+  console.log("----------------------------------------------------------------")
 
-
-    console.log(`temp: ${temp}`)
-    console.log(`s: ${s}`)
-
-
-    s.push(temp);
-
-
-    console.log(`s: ${s}`)
-    console.log("----------------------------------------------------------------")
-
-    // return s
+  // return s
 };
-
-
-
 
 
 //////////////////////////////////////
@@ -45,18 +36,11 @@ var reverseString = function(s) {
 // };
 
 
-
-
-
-
-
-
 /////////////////////////////////////
 // cheating way:
 // var reverseString = function(s) {
 //     return s.reverse()
 // };
-
 
 
 ////////////////////////////////////////////////////////////////

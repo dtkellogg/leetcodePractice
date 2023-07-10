@@ -3,29 +3,29 @@ s = "3[a2[c]]" // Output: "accaccacc"
 
 // recursive solution:
 var decodeString = function(s) {
-    return helper(s, "")
-    
-    function helper(s, str){
-        let num = 0;
-        for(let i = 0; i < s.length; i++){
-            let x = s.substr(i, 1);
-            
-            if(x == '['){
-                let result, n;
-                [result, n] = helper(s.substr(i+1), "");
-                while(num > 0){
-                    str += result;
-                    num--;
-                }
-                i += n;
-            }
-            else if(x == ']') return [str, ++i]
-            
-            else if(!isNaN(x)) num = num*10 + parseInt(x);
-            else str += x;
+  return helper(s, "")
+  
+  function helper(s, str){
+    let num = 0;
+    for(let i = 0; i < s.length; i++){
+      let x = s.substr(i, 1);
+      
+      if(x == '['){
+        let result, n;
+        [result, n] = helper(s.substr(i+1), "");
+        while(num > 0){
+          str += result;
+          num--;
         }
-        return str
+        i += n;
+      }
+      else if(x == ']') return [str, ++i]
+      
+      else if(!isNaN(x)) num = num*10 + parseInt(x);
+      else str += x;
     }
+    return str
+  }
 };
 
 ////////////////////////////////////////////////////////////////
