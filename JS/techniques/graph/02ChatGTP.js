@@ -87,6 +87,8 @@ class Graph {
   }
 }
 
+// --- Explanation:
+
 // The code above implements the Graph class with all the required operations. 
 // It uses a Map to store nodes as keys and their corresponding neighbors in a 
 // Set. Adding nodes and edges is done by adding entries to the map and adding 
