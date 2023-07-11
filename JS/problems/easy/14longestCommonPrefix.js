@@ -30,7 +30,6 @@ function longestCommonPrefix(strs) {
   for (var i = 0; i < strs[0].length; i++) {
     if(strs.some((s) => s[i] !== strs[0][i])) return strs[0].slice(0, i)
   }
-
   return strs[0]
 }
 

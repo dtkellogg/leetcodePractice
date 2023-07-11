@@ -1,10 +1,10 @@
 x = 123
 
 var reverse = function(x) {
-    const absReversed = Math.abs(x).toString().split("").reverse().join("")
-    return absReversed < 2 ** 31
-        ? absReversed * Math.sign(x)
-        : 0
+  const absReversed = Math.abs(x).toString().split("").reverse().join("")
+  return absReversed < 2 ** 31
+    ? absReversed * Math.sign(x)
+    : 0
 };
 
 ////////////////////////////////
