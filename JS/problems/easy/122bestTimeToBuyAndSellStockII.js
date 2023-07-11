@@ -1,30 +1,30 @@
 prices = [7,1,5,3,6,4]
 
 // var maxProfit = function(prices) {
-//     let count = 0
-    
-//     for(let i = 1; i < prices.length; i++) {
-//         let diff = prices[i] - prices[i - 1]
-//         if (diff > 0) count += diff
-//     }
-    
-//     return count
+//   let count = 0
+  
+//   for(let i = 1; i < prices.length; i++) {
+//     let diff = prices[i] - prices[i - 1]
+//     if (diff > 0) count += diff
+//   }
+  
+//   return count
 // };
 
 
 var maxProfit = function (prices) {
-    let profit = 0;
+  let profit = 0;
 
-    for (let i = 1; i < prices.length; i++) {
-        let prev = prices[i - 1];
-        let current = prices[i];
+  for (let i = 1; i < prices.length; i++) {
+    let prev = prices[i - 1];
+    let current = prices[i];
 
-        if (prev < current) {
-            profit += current - prev;
-        }
+    if (prev < current) {
+      profit += current - prev;
     }
-    
-    return profit;
+  }
+  
+  return profit;
 };
 
 
@@ -50,7 +50,7 @@ var maxProfit = function (prices) {
 ////////////////////////////////////////////////////////////////////////////////
 // PRACTICE
 
-var maxProfit = function (prices) {
-}
+// var maxProfit = function (prices) {
+// }
 
 console.log(maxProfit(prices))

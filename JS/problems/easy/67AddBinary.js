@@ -13,8 +13,8 @@ var addBinary = function(a, b) {
 ////////////////////////////////////////////////////////////////////////////////
 // PRACTICE
 
-var addBinary = function(a, b) {
-}
+// var addBinary = function(a, b) {
+// }
 
 console.log(addBinary(a, b))
 
