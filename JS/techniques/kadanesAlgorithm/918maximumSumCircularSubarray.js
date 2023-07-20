@@ -51,3 +51,22 @@ function kadanesAlgorithm(arr) {
 }
 
 console.log(maxSubarraySumCircular(nums))
+
+
+// Explanation:
+
+// We define the function maxSubarraySumCircular(nums) to solve the circular 
+// array problem. First, we find the maximum subarray sum for the non-circular 
+// case using the kadanesAlgorithm function.
+
+// Next, we calculate the total sum of the array in the variable totalSum.
+
+// We invert the signs of the elements in the array nums to find the minimum 
+// subarray sum (using the same kadanesAlgorithm function).
+
+// The maximum circular subarray sum is then calculated as totalSum + minSum, 
+// where minSum is the result obtained from finding the minimum subarray sum 
+// with inverted signs.
+
+// Finally, we compare the maximum subarray sums from both cases and return the 
+// larger value as the answer.
