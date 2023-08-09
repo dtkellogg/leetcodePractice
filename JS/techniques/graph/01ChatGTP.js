@@ -41,6 +41,9 @@ console.log(result); // ['A', 'B', 'D', 'E', 'F', 'C']
 function dfs(graph, startVertex) {
   const visited = new Set();
   const traversalOrder = [];
+  dfsHelper(startVertex); // Start the DFS traversal from the start vertex
+
+  return traversalOrder;
 
   // Define a helper function for the recursive DFS
   function dfsHelper(vertex) {
@@ -54,10 +57,6 @@ function dfs(graph, startVertex) {
       }
     }
   }
-
-  dfsHelper(startVertex); // Start the DFS traversal from the start vertex
-
-  return traversalOrder;
 }
 
 

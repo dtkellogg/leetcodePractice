@@ -8,16 +8,16 @@ flowerbed = [0,0,1,0,0], n = 1
 
 // i like this one:
 var canPlaceFlowers = function(flowerbed, n) {
-    let count = 0
-    
-    for (let i = 0; i < flowerbed.length; i++) {
-        if (flowerbed[i] === 0 && flowerbed[i - 1] !== 1 && flowerbed[i + 1] !== 1) {
-            count++
-            flowerbed[i] = 1
-        }
+  let count = 0
+  
+  for (let i = 0; i < flowerbed.length; i++) {
+    if (flowerbed[i] === 0 && flowerbed[i - 1] !== 1 && flowerbed[i + 1] !== 1) {
+      count++
+      flowerbed[i] = 1
     }
+  }
 
-    return count >= n
+  return count >= n
 };
 
 // var canPlaceFlowers = function(flowerbed, n) {
