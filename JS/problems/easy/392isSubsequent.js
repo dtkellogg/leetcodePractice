@@ -7,16 +7,17 @@ s = "abc", t = "ahbgdc"
 
 // 2 pointer solution
 var isSubsequence = function(s, t) {
-    let i = 0, j = 0;
-    while( j < t.length) {
-        if(s[i] === t[j]) {
-            i++;
-        }
-        j++;        
+  let i = 0, j = 0;
+  
+  while(j < t.length) {
+    if(s[i] === t[j]) {
+      i++;
     }
+    j++;        
+  }
 
-    console.log(s)
-    return i === s.length
+  console.log(s)
+  return i === s.length
 };
 
 
