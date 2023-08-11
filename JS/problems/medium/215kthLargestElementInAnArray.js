@@ -3,12 +3,12 @@ nums = [3,2,1,5,6,4], k = 2 // Output: 5
 // my solution
 
 var findKthLargest = function(nums, k) {
-    const sorted = nums.sort((a,b) => b - a)
-    
-    console.log(sorted)
-    console.log(`sorted[k-1]: ${sorted[k-1]}`)
-    
-    return sorted[k-1]
+  const sorted = nums.sort((a,b) => b - a)
+  
+  console.log(sorted)
+  console.log(`sorted[k-1]: ${sorted[k-1]}`)
+  
+  return sorted[k-1]
 }
 
 ////////////////////////////////
@@ -44,8 +44,10 @@ var findKthLargest = function(nums, k) {
 //     arr[j] = tmp;
 // }
 
+
+
 ////////////////////////////////
-// best solution on LeetCode:
+// 🔥🔥🔥🔥 best solution on LeetCode:
 
 // var findKthLargest = function(nums, k) {
 //     return quickSelect(nums, 0, nums.length - 1, k);
