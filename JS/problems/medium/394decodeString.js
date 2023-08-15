@@ -75,6 +75,14 @@ var decodeString = function(s) {
 /////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////
 // 🔥🔥🔥 Using stack:
+
+// Traversal the string s and push into a stack for non-] character
+// When we meets the ] character, we should do these steps
+// pop all characters until meets [
+// pop all numbers to get the repeat count
+// repeat the substring and push it back to stack
+// Finally, we join all the pieces in the stack
+
 const decodeString = s => {
   const stack = [];
   for (const char of s) {
@@ -91,7 +99,7 @@ const decodeString = s => {
       num = cur + num;
       cur = stack.pop();
     }
-    stack.push(cur);
+    if(cur) stack.push(cur);
     stack.push(str.repeat(Number(num)));
   }
   return stack.join('');
