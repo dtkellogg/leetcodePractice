@@ -77,10 +77,10 @@ var decodeString = function(s) {
 // 🔥🔥🔥 Using stack:
 
 // Traversal the string s and push into a stack for non-] character
-// When we meets the ] character, we should do these steps
-// pop all characters until meets [
-// pop all numbers to get the repeat count
-// repeat the substring and push it back to stack
+// When we meets the ] character, we should do these steps:
+// 1) pop all characters until meets [
+// 2) pop all numbers to get the repeat count
+// 3) repeat the substring and push it back to stack
 // Finally, we join all the pieces in the stack
 
 const decodeString = s => {
