@@ -67,11 +67,6 @@ var decodeString = function(s) {
 //   return s
 // };
 
-// PRACTICE
-
-// var decodeString = (s) => {
-// }
-
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 // 🔥🔥🔥 Using stack:
@@ -104,5 +99,11 @@ const decodeString = s => {
   }
   return stack.join('');
 };
+
+// PRACTICE
+
+// var decodeString = (s) => {
+// }
+
 
 console.log(decodeString(s))
