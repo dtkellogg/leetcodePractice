@@ -11,7 +11,7 @@ function threeSum(nums) {
 	// afford the O(NlogN) sort operation
 	nums.sort((a, b) => a - b)
 
-    // if the question asks us for a custom target, we can control it here
+  // if the question asks us for a custom target, we can control it here
 	let target = 0
 
 	for (let i = 0; i < nums.length - 2; i++) {
