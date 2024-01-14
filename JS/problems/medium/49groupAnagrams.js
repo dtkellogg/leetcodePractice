@@ -1,6 +1,25 @@
 strs = ["eat","tea","tan","ate","nat","bat"]
 
 // 🔥🔥🔥
+// var groupAnagrams = function(strs) {
+//   let mapping = {}
+//   for (let str of strs) {
+//     let charCount = new Array(26).fill(0)
+//     for (let c of str) {
+//       console.log(str, c, c.charCodeAt(0), 'a'.charCodeAt(0))
+//       charCount[c.charCodeAt(0) - 'a'.charCodeAt(0)]++  // This is mapping the character code values to index values in the array.
+//     }
+//     if (!mapping[charCount]) mapping[charCount] = []
+//     mapping[charCount].push(str)
+//   }
+
+//   console.log(mapping)
+//   return Object.values(mapping)
+// };
+
+
+////////////////////////////////////////////////////////////////
+// same thing as above, but w/o comments:
 var groupAnagrams = function(strs) {
   let mapping = {}
   for (let str of strs) {
@@ -12,10 +31,8 @@ var groupAnagrams = function(strs) {
     mapping[charCount].push(str)
   }
 
-  console.log(mapping)
   return Object.values(mapping)
 };
-
 
 
 ////////////////////////////////////////////////////////////////
