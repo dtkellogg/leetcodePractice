@@ -5,7 +5,7 @@
 // For example, given the linked list: 1 -> 2 -> 3 -> 4 -> 5, the function 
 // should return the linked list: 5 -> 4 -> 3 -> 2 -> 1.
 
-
+// 🔥 Two Pointers:
 class Node {
   constructor(value) {
     this.value = value;
@@ -26,6 +26,15 @@ function reverseLinkedList(head) {
 
   return prev;
 }
+
+// recursive solution:
+// var reverseList = function(head, prev = null) {
+//   if (!head) return prev;
+//   let next = head.next;
+//   head.next = prev;
+//   return reverseList(next, head);
+// };
+
 
 // Test the function
 // Create the linked list: 1 -> 2 -> 3 -> 4 -> 5
