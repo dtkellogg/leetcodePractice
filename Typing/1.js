@@ -29,7 +29,7 @@ $81 / 3 = $27
 6 % 4 = 2
 2 ^ 3 = 8
 if(13 >= x && (x !== 69)) return res
-return x + 3 >= 9 ? 'nice!' : 'try again'
+return x + 3 >= 9 ? 'nice!' : `${tries} remaining`
 
 
 // ---------------------------------------------------------------- //
@@ -38,3 +38,32 @@ return x + 3 >= 9 ? 'nice!' : 'try again'
 
 // ---------------------------------------------------------------- //
 
+// 1.
+var Trie = function() {
+};
+
+Trie.prototype.insert = function(word) {
+}
+    
+Trie.prototype.search = function(word) {
+};
+
+Trie.prototype.startsWith = function(prefix) {
+};
+
+class Trie {
+  constructor() {
+  }
+
+  insert(word) {
+  }
+
+  traverse(word) {
+  }
+
+  search(word) {
+  }
+
+  startsWith(prefix) {
+  }
+}
