@@ -53,70 +53,47 @@ const exist = (board, word) => {
 };
 
 
-////////////////////////////////
-// same algorithm as above, but w/o comments
+// 🔥🔥
+//////////////////////////////// 
+// same algorithm as above, but w/o comments && A LITTLE TWEEKED - RETURN STATEMENTS W/O FALSE
 // const exist = (board, word) => {
-//   if (board.length === 0) return false;
+const exist = (board, word) => {
+if(board.length === 0) return false
 
-//   const h = board.length,
-//         w = board[0].length,
-//         dirs = [[-1, 0], [0, 1], [1, 0], [0, -1]];
+const h = board.length,
+  w = board[0].length,
+  directions = [[-1,0], [0, 1], [1,0], [0,-1]]
 
-//   for (let i = 0; i < h; i++) {
-//     for (let j = 0; j < w; j++) {
-//       if (go(i, j, 0)) return true;
-//     }
-//   }
+for(let i = 0; i < h; i++) {
+  for(let j = 0; j < w; j++) {
+    if(go(i, j, 0)) return true
+  }
+}
 
-//   const go = (x, y, k) => {
-//     if (board[x][y] !== word[k]) return false;
-//     if (k === word.length - 1) return true;
-//     board[x][y] = '*';
+function go(x, y, k) {
+  if(board[x][y] !== word[k]) return
+  if(k === word.length - 1) return true
+  board[x][y] = '*'
 
-//     for (const [dx, dy] of dirs) {
-//       const i = x + dx,
-//             j = y + dy;
-//       if (i >= 0 && i < h && j >= 0 && j < w) {
-//         if (go(i, j, k + 1)) return true;
-//       }
-//     }
+  for(let [dx, dy] of directions) {
+    const i = x + dx,
+      j = y + dy
 
-//     board[x][y] = word[k];
-//     return false;
-//   };
+    if(i >= 0 && i < h && j >= 0 && j < w) {
+      if(go(i,j,k + 1)) return true
+    }
+  }
+  board[x][y] = word[k]
+  return
+}
 
-//   return false;
-// };
+return false
+};
+
 
 // PRACTICE
 
 // const exist = (board, word) => {
-//   if(board.length === 0) return false;
-
-//   const H = board.length,
-//         W = board[0].length,
-//         dirs = [[-1, 0], [0, 1], [1, 0], [0, -1]];
-
-//   const go = (row, col, k) => {
-//     if(board[row][col] !== word[k]) return false;
-//     if(board[row][col] === word[k]) return true;
-
-//     for(const [dx, dy] of dirs) {
-//       const i = row + dx,
-//             j = col + dy;
-//       if(i >= 0 && j >= 0 && i < H && j < W) {
-//         if(go(i, j, k + 1)) return true;
-//       }
-//     }
-//   }
-
-//   for(let row = 0; row < H; row++) {
-//     for(let col = 0; col < H; col++) {
-//       if(go(row, col, k)) return true
-//     }
-//   }
-
-//   return false
 // }
 
 console.log(exist(board, word))
