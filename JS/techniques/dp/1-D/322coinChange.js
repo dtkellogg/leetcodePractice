@@ -5,37 +5,37 @@ coins = [1,2,5], amount = 11  // Output: 3
 
 // Dynamic Programming
 
-// const coinChange = (coins, amount) => {
-//   // dp[i] represents the least amount of coins that can make the value equals to the i
-//   const dp = Array(amount + 1).fill(Infinity);  // +1 to make the case for zeros coins
-//   dp[0] = 0;
+const coinChange = (coins, amount) => {
+  // dp[i] represents the least amount of coins that can make the value equals to the i
+  const dp = Array(amount + 1).fill(Infinity);  // +1 to make the case for zeros coins
+  dp[0] = 0;
 
-//   console.log("dp")
-//   console.log(dp)
-//   console.log("----------------------------------------------------------------")
+  console.log("dp")
+  console.log(dp)
+  console.log("----------------------------------------------------------------")
 
-//   for (let i = 1; i <= amount; i++) {
-//     for (const coin of coins) {
+  for (let i = 1; i <= amount; i++) {
+    for (const coin of coins) {
 
-//       console.log(`total$: ${i}; coin-value: ${coin}; dp[i]: ${dp[i]}; i - coin >= 0: ${i - coin >= 0}; i - coin: ${i - coin};`)
+      console.log(`total$: ${i}; coin-value: ${coin}; dp[i]: ${dp[i]}; i - coin >= 0: ${i - coin >= 0}; i - coin: ${i - coin};`)
 
-//       if (i - coin >= 0) {
-//           console.log("IF")
-//           console.log(`dp[i]: ${dp[i]}; dp[i - coin] + 1: ${dp[i - coin] + 1}`)
-//         dp[i] = Math.min(
-//           dp[i],
-//           dp[i - coin] + 1,
-//         );
-//       }
+      if (i - coin >= 0) {
+          console.log("IF")
+          console.log(`dp[i]: ${dp[i]}; dp[i - coin] + 1: ${dp[i - coin] + 1}`)
+        dp[i] = Math.min(
+          dp[i],
+          dp[i - coin] + 1,
+        );
+      }
 
-//       console.log("dp")
-//       console.log(dp)
-//       console.log("-------------------------------------")
+      console.log("dp")
+      console.log(dp)
+      console.log("-------------------------------------")
 
-//     }
-//   }
-//   return dp[amount] === Infinity ? -1 : dp[amount];
-// };
+    }
+  }
+  return dp[amount] === Infinity ? -1 : dp[amount];
+};
 
 
 //////////////////////////////////////////////////////////////////////////////
@@ -90,8 +90,8 @@ coins = [1,2,5], amount = 11  // Output: 3
 
 ////////////////////////////////////////////////////////////////
 // PRACTICE
-const coinChange = (coins, amount) => {
-}
+// const coinChange = (coins, amount) => {
+// }
 
 
 
