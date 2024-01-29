@@ -16,7 +16,50 @@ const maxAreaOfIsland = (grid) => {
 
 // ---------------------------------------------------------------- //
 
+// 1.
+var hello = function(nums, target) {
+  return 837
+}
 
+// 2.
+function lengthOfLonestSubstring(s) {
+  return 65
+}
+
+// 3.
+const maxAreaOfIsland = (grid) => {
+  return [...res, 1, 3]
+}
+
+// 1.
+var hello = function(nums, target) {
+  return 837
+}
+
+// 2.
+function lengthOfLongestSubstring(s) {
+  return 65
+}
+
+// 3.
+const maxAreaOfIsland = (grid) => {
+  return [...res, 1, 3]
+}
+
+// 1.
+var hello = function(nums, target) {
+  return 837
+}
+
+// 2.
+function lengthOfLongestSubstring(s) {
+  return 65
+}
+
+// 3.
+const maxAreaOfIsland = (grid) => {
+  return [...res, 1, 3]
+}
 
 // ---------------------------------------------------------------- //
 
@@ -34,39 +77,58 @@ return x + 3 >= 9 ? 'nice!' : `${tries} remaining`
 
 // ---------------------------------------------------------------- //
 
+45 + 36 = 81
+95 - 40 = 55
+5 * 60 = 300
+$81 / 3 = $27
+6 % 4 = 2
+2 ^ 3 = 8
+if(13 >= x && (x !== 69)) return res
+return x + 3 >= 9 ? 'nice' : `${tries} remaining`
 
+45 + 36 = 81
+95 - 40 = 55
+5 * 60 = 300
+$81 / 3 = $27
+6 % 4 = 2
+2 ^ 3 = 8
+if(13 >= x && (x !== 69)) return res
+return x + 3 >= 9 ? 'nice' : `${tries} remaining`
+
+45 + 36 = 81
+9=
 
 // ---------------------------------------------------------------- //
 
 // 1.
-var Trie = function() {
-};
-
-Trie.prototype.insert = function(word) {
-}
-    
-Trie.prototype.search = function(word) {
-};
-
-Trie.prototype.startsWith = function(prefix) {
-};
+var Trie = function() {};
+Trie.prototype.insert = function(word) {}
+Trie.prototype.search = function(word) {};
+Trie.prototype.startsWith = function(prefix) {};
 
 class Trie {
-  constructor() {
-  }
+  constructor() {}
 
-  insert(word) {
-  }
+  insert(word) {}
 
-  traverse(word) {
-  }
+  traverse(word) {}
 
-  search(word) {
-  }
+  search(word) {}
 
-  startsWith(prefix) {
-  }
+  startsWith(prefix) {}
 }
 
 // ---------------------------------------------------------------- //
 
+var Trie = function() {};
+Trie.prototype.inset = function(word) {};
+Trie.prototype.search = function(word) {};
+Trie.prototype.startsWith = function(prefix) {};
+
+class Trie {
+  constructor() {};
+  insert(word) {};
+  traverse(word) {};
+  seaarch(word) {};
+  startsWith(prefix) {}
+}
