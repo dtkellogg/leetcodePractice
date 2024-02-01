@@ -1,32 +1,32 @@
 s = "leetcode", wordDict = ["leet","code"] // Output: true
 
 var wordBreak = function(s, wordDict) {
-    const words = new Set(wordDict);
-    const wordLens = new Set(wordDict.map((word) => word.length))
-    const starts = new Set([0])
+  const words = new Set(wordDict);
+  const wordLens = new Set(wordDict.map((word) => word.length))
+  const starts = new Set([0])
 
-    console.log("words:")
-    console.log(words)
-    console.log("wordLens:")
-    console.log(wordLens)
-    console.log("starts:")
-    console.log(starts)
+  // console.log("words:")
+  // console.log(words)
+  // console.log("wordLens:")
+  // console.log(wordLens)
+  // console.log("starts:")
+  // console.log(starts)
 
-    for (let start of starts) {
-        for (let len of wordLens) {
-            if (words.has(s.slice(start, start + len))) {
-                starts.add(start + len)
+  for (let start of starts) {
+    for (let len of wordLens) {
+      if (words.has(s.slice(start, start + len))) {
+        starts.add(start + len)
 
-                
-                console.log(`--------------------------------`)
-                console.log(`start: ${start}`)
-                console.log(`len: ${len}`)
-                console.log("starts:")
-                console.log(starts)
-            }
-        }
+        
+      }
+      console.log(`--------------------------------`)
+      console.log(`start: ${start}`)
+      console.log(`len: ${len}`)
+      console.log("starts:")
+      console.log(starts)
     }
-    return starts.has(s.length)
+  }
+  return starts.has(s.length)
 };
 
 // same as algorithm above, but w/o comments

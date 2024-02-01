@@ -120,4 +120,15 @@ function lengthOfLongestSubstring(s) {
 //     },0)    
 // }
 
-console.log(lengthOfLongestSubstring(s))
+// console.log(lengthOfLongestSubstring(s))
+
+let A = ['hello']
+let B  = A
+B.push('you')
+
+
+let C = 4
+let D = C
+D = D + 5
+
+console.log(C, D)

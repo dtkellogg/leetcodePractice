@@ -61,8 +61,8 @@ const exist = (board, word) => {
   if(board.length === 0) return false
 
   const h = board.length,
-    w = board[0].length,
-    directions = [[-1,0], [0, 1], [1,0], [0,-1]]
+        w = board[0].length,
+        directions = [[-1,0], [0, 1], [1,0], [0,-1]]
 
   for(let i = 0; i < h; i++) {
     for(let j = 0; j < w; j++) {
@@ -77,7 +77,7 @@ const exist = (board, word) => {
 
     for(let [dx, dy] of directions) {
       const i = x + dx,
-        j = y + dy
+            j = y + dy
 
       if(i >= 0 && i < h && j >= 0 && j < w) {
         if(go(i,j,k + 1)) return true
