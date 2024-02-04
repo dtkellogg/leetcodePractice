@@ -80,7 +80,6 @@ $81 / 3 = $27
 if(13 >= x && (x !== 69)) return res
 return x + 3 >= 9 ? 'nice' : `${tries} remaining`
 
-
 // ---------------------------------------------------------------- //
 
 // 1.
@@ -105,9 +104,9 @@ class Trie {
 
 // 1.
 var Trie = function() {};
-Trie.prototype.insert = function(word) {}
-Trie.prototype.search = function(word) {}
-Trie.prototype.startsWith = function(prefix) {}
+Trie.prototype.insert = function(word) {};
+Trie.prototype.search = function(word) {};
+Trie.prototype.startsWith = function(prefix) {};
 
 class Trie {
   constructor() {}
@@ -117,11 +116,12 @@ class Trie {
   startsWith(prefix) {}
 }
 
+
 // 2.
-var Trie = function() {}
-Trie.prototype.insert = function(word) {}
-Trie.prototype.search = function(word) {}
-Trie.prototype.startsWith = function(prefix) {}
+var Trie = function() {};
+Trie.prototype.insert = function(word) {};
+Trie.prototype.search = function(word) {};
+Trie.prototype.startsWith = function(prefix) {};
 
 class Trie {
   constructor() {}
